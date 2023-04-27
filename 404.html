@@ -6,9 +6,8 @@
     <script>
       function redirect() {
         var location = window.location;
-        var path = location.pathname.split("/")[1];
-        console.log(path);
-        alert(`https://monumental-gecko-d0b94a.netlify.app/${path}`);
+        var path = location.pathname;
+        window.location.replace(`https://monumental-gecko-d0b94a.netlify.app${path}`);
       }
       
       redirect();

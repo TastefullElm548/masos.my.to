@@ -16,3 +16,8 @@ div {
 div > img {
     padding-bottom: 15px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}

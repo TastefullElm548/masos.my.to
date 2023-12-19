@@ -1,3 +1,8 @@
-let link = document.getElementById("link");
-link.textContent = `masos.my.to/${window.location.search.substr(1)}`;
-link.setAttribute("href", `https://masos.my.to/${window.location.search.substr(1)}`);
+const DOMAIN = "masos.my.to/";
+const LINK = document.getElementById("link");
+
+let baseURL = DOMAIN + window.location.search.replace("?", "");
+let fullURL = "https://" + baseURL;
+
+LINK.textContent = baseURL;
+LINK.setAttribute("href", fullURL);

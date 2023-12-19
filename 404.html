@@ -4,14 +4,7 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      function redirect() {
-        var location = window.location;
-        var path = location.pathname;
-        window.location.replace(`https://monumental-gecko-d0b94a.netlify.app${path}`);
-      }
-      
-      redirect();
+        window.location.replace("https://monumental-gecko-d0b94a.netlify.app" + location.pathname);
     </script>
   </head>
-  <body></body>
 </html>
